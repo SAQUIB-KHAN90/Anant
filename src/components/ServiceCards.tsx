@@ -47,10 +47,10 @@ const ServiceCards = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-card/20 to-background">
+    <section className="py-20 bg-gradient-to-b from-card/20 to-background ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Service Categories */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 ">
           {/* Core Cutting Service Card */}
           <div className="service-card group cursor-pointer">
             <div className="w-20 h-20 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">

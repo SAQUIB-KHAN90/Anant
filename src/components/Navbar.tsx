@@ -97,7 +97,7 @@ const Navbar = () => {
                     height="100px"
                   />
                 </span>
-                <span className="text-xs text-muted-foreground font-medium">
+                <span className="text-m text-white font-medium">
                   Core Cutting & Rebaring Services
                 </span>
               </div>

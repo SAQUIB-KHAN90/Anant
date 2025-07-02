@@ -3,7 +3,7 @@ import { Construction, Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-card border-t border-border">
+    <footer className="bg-card border-t border-border bg-white text-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -13,16 +13,16 @@ const Footer = () => {
                 <img src="/images/c.png" alt="" />
               </span>
             </Link>
-            <p className="text-muted-foreground mb-4">
+            <p className=" mb-4 text-black">
               Expert RCC Core Cutting & Rebaring Services with cutting-edge
               technology and professional excellence.
             </p>
             <div className="flex space-x-4">
               <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors cursor-pointer">
-                <Phone className="h-5 w-5 text-primary" />
+                <Phone className="h-5 w-5 text-black" />
               </div>
               <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors cursor-pointer">
-                <Mail className="h-5 w-5 text-primary" />
+                <Mail className="h-5 w-5 text-black" />
               </div>
             </div>
           </div>
@@ -36,7 +36,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-black hover:text-primary transition-colors"
                 >
                   RCC Core Cutting
                 </Link>
@@ -44,7 +44,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-black hover:text-primary transition-colors"
                 >
                   Wall Cutting
                 </Link>
@@ -52,7 +52,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-black hover:text-primary transition-colors"
                 >
                   Beam Cutting
                 </Link>
@@ -60,7 +60,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-black hover:text-primary transition-colors"
                 >
                   Rebaring Work
                 </Link>
@@ -68,7 +68,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-black hover:text-primary transition-colors"
                 >
                   Fastener Fixing
                 </Link>
@@ -85,7 +85,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/about"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-black hover:text-primary transition-colors"
                 >
                   About Us
                 </Link>
@@ -93,7 +93,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="#"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-black hover:text-primary transition-colors"
                 >
                   Projects
                 </Link>
@@ -101,7 +101,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="#"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-black hover:text-primary transition-colors"
                 >
                   Blog
                 </Link>
@@ -109,7 +109,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-black hover:text-primary transition-colors"
                 >
                   Contact
                 </Link>
@@ -125,30 +125,28 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary" />
-                <span className="text-muted-foreground">+91 7289938603</span>
+                <span className="text-black">+91 7289938603</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-muted-foreground">
-                  Anantkumaryadav612@gmail.com
-                </span>
+                <span className="text-black">Anantkumaryadav612@gmail.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5" />
-                <span className="text-muted-foreground">
+                <span className="text-black">
                   D-90 Sector-48 Noida U.P 201031
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Clock className="h-5 w-5 text-primary" />
-                <span className="text-muted-foreground">Mon-Sat: 8AM-6PM</span>
+                <span className="text-black">Mon-Sat: 8AM-6PM</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="mt-8 pt-8 border-t border-border text-center">
-          <p className="text-muted-foreground">
+          <p className="text-black">
             Design and Developed By{" "}
             <a href="https://www.theneedleads.com/">Needleads Technologies</a>
           </p>
