@@ -1,96 +1,171 @@
-
-import Layout from '@/components/Layout';
-import { Circle, Construction, Hammer, Wrench } from 'lucide-react';
+import Layout from "@/components/Layout";
+import { Circle, Construction, Hammer, Wrench } from "lucide-react";
+import FloatingCTAs from "@/components/FloatingCTAs";
 
 const Services = () => {
   const coreCuttingServices = [
     {
-      title: 'RCC Core Cutting Service',
-      description: 'Precision circular holes in reinforced concrete for pipes, ducts, and utilities.',
-      image: '/images/1.jpg',
-      features: ['Diamond core bits', 'Clean precise cuts', 'Minimal vibration', 'All diameter sizes']
+      title: "RCC Core Cutting Service",
+      description:
+        "Precision circular holes in reinforced concrete for pipes, ducts, and utilities.",
+      image: "/images/1.jpg",
+      features: [
+        "Diamond core bits",
+        "Clean precise cuts",
+        "Minimal vibration",
+        "All diameter sizes",
+      ],
     },
     {
-      title: 'RCC Slab Core Cutting Service',
-      description: 'Specialized slab cutting for floor modifications and utility installations.',
-      image: '/images/2.jpg',
-      features: ['Floor penetrations', 'Drainage systems', 'Electrical conduits', 'HVAC installations']
+      title: "RCC Slab Core Cutting Service",
+      description:
+        "Specialized slab cutting for floor modifications and utility installations.",
+      image: "/images/2.jpg",
+      features: [
+        "Floor penetrations",
+        "Drainage systems",
+        "Electrical conduits",
+        "HVAC installations",
+      ],
     },
     {
-      title: 'RCC Wall Core Cutting Service',
-      description: 'Wall penetrations for doors, windows, and utility passages.',
-      image: '/images/3.jpg',
-      features: ['Door openings', 'Window installations', 'Pipe passages', 'Duct work']
+      title: "RCC Wall Core Cutting Service",
+      description:
+        "Wall penetrations for doors, windows, and utility passages.",
+      image: "/images/3.jpg",
+      features: [
+        "Door openings",
+        "Window installations",
+        "Pipe passages",
+        "Duct work",
+      ],
     },
     {
-      title: 'RCC Beam Core Cutting Service',
-      description: 'Precision cutting of structural beams for modifications.',
-      image: '/images/4.jpg',
-      features: ['Structural modifications', 'Service penetrations', 'Reinforcement access', 'Load calculations']
+      title: "RCC Beam Core Cutting Service",
+      description: "Precision cutting of structural beams for modifications.",
+      image: "/images/4.jpg",
+      features: [
+        "Structural modifications",
+        "Service penetrations",
+        "Reinforcement access",
+        "Load calculations",
+      ],
     },
     {
-      title: 'Brick Wall Core Cutting Service',
-      description: 'Clean cutting through brick and masonry walls.',
-      image: '/images/5.jpg',
-      features: ['Masonry cutting', 'Minimal dust', 'Precise openings', 'Structural integrity']
+      title: "Brick Wall Core Cutting Service",
+      description: "Clean cutting through brick and masonry walls.",
+      image: "/images/5.jpg",
+      features: [
+        "Masonry cutting",
+        "Minimal dust",
+        "Precise openings",
+        "Structural integrity",
+      ],
     },
     {
-      title: 'Concrete Core Cutting Service',
-      description: 'General concrete cutting for various construction needs.',
-      image: '/images/6.jpg',
-      features: ['Plain concrete', 'Reinforced concrete', 'Prestressed concrete', 'All thicknesses']
+      title: "Concrete Core Cutting Service",
+      description: "General concrete cutting for various construction needs.",
+      image: "/images/6.jpg",
+      features: [
+        "Plain concrete",
+        "Reinforced concrete",
+        "Prestressed concrete",
+        "All thicknesses",
+      ],
     },
     {
-      title: 'Chimney Core Cutting Service',
-      description: 'Specialized chimney cutting and modification services.',
-      image: '/images/7.jpg',
-      features: ['Chimney modifications', 'Flue installations', 'Ventilation systems', 'Safe procedures']
+      title: "Chimney Core Cutting Service",
+      description: "Specialized chimney cutting and modification services.",
+      image: "/images/7.jpg",
+      features: [
+        "Chimney modifications",
+        "Flue installations",
+        "Ventilation systems",
+        "Safe procedures",
+      ],
     },
     {
-      title: 'AC Core Cutting Service',
-      description: 'Precision holes for AC installations and HVAC systems.',
-      image: '/images/8.jpg',
-      features: ['AC installations', 'HVAC systems', 'Refrigeration units', 'Ventilation holes']
-    }
+      title: "AC Core Cutting Service",
+      description: "Precision holes for AC installations and HVAC systems.",
+      image: "/images/8.jpg",
+      features: [
+        "AC installations",
+        "HVAC systems",
+        "Refrigeration units",
+        "Ventilation holes",
+      ],
+    },
   ];
 
   const rebaringServices = [
     {
-      title: 'Rebaring Work',
-      description: 'Professional steel reinforcement installation and modification.',
-      image: '/images/9.jpg',
-      features: ['Steel bar installation', 'Reinforcement modification', 'Structural strengthening', 'Code compliance']
+      title: "Rebaring Work",
+      description:
+        "Professional steel reinforcement installation and modification.",
+      image: "/images/9.jpg",
+      features: [
+        "Steel bar installation",
+        "Reinforcement modification",
+        "Structural strengthening",
+        "Code compliance",
+      ],
     },
     {
-      title: 'Fastener Fixing (Chemical)',
-      description: 'Chemical anchor systems for permanent fastening solutions.',
-      image: '/images/10.jpg',
-      features: ['Chemical anchors', 'High load capacity', 'Permanent fixing', 'Corrosion resistant']
+      title: "Fastener Fixing (Chemical)",
+      description: "Chemical anchor systems for permanent fastening solutions.",
+      image: "/images/10.jpg",
+      features: [
+        "Chemical anchors",
+        "High load capacity",
+        "Permanent fixing",
+        "Corrosion resistant",
+      ],
     },
     {
-      title: 'Fastener Fixing (Mechanical)',
-      description: 'Mechanical fastening systems for various applications.',
-      image: '/images/2.jpg',
-      features: ['Mechanical anchors', 'Quick installation', 'Removable options', 'Various sizes']
+      title: "Fastener Fixing (Mechanical)",
+      description: "Mechanical fastening systems for various applications.",
+      image: "/images/2.jpg",
+      features: [
+        "Mechanical anchors",
+        "Quick installation",
+        "Removable options",
+        "Various sizes",
+      ],
     },
     {
-      title: 'RCC Slab (Floor Saw) Cutting Service',
-      description: 'Large area slab cutting with floor saw technology.',
-      image: '/images/4.jpg',
-      features: ['Large openings', 'Straight cuts', 'Minimal dust', 'High precision']
+      title: "RCC Slab (Floor Saw) Cutting Service",
+      description: "Large area slab cutting with floor saw technology.",
+      image: "/images/4.jpg",
+      features: [
+        "Large openings",
+        "Straight cuts",
+        "Minimal dust",
+        "High precision",
+      ],
     },
     {
-      title: 'RCC Wall (Wall Saw) Cutting Service',
-      description: 'Vertical and horizontal wall cutting with advanced wall saws.',
-      image: '/images/6.jpg',
-      features: ['Vertical cuts', 'Horizontal cuts', 'Remote operation', 'Safe cutting']
+      title: "RCC Wall (Wall Saw) Cutting Service",
+      description:
+        "Vertical and horizontal wall cutting with advanced wall saws.",
+      image: "/images/6.jpg",
+      features: [
+        "Vertical cuts",
+        "Horizontal cuts",
+        "Remote operation",
+        "Safe cutting",
+      ],
     },
     {
-      title: 'Beam (Wire Saw) Cutting Service',
-      description: 'Heavy-duty beam cutting using diamond wire saw technology.',
-      image: '/images/8.jpg',
-      features: ['Heavy sections', 'Complex shapes', 'Underwater cutting', 'Minimal noise']
-    }
+      title: "Beam (Wire Saw) Cutting Service",
+      description: "Heavy-duty beam cutting using diamond wire saw technology.",
+      image: "/images/8.jpg",
+      features: [
+        "Heavy sections",
+        "Complex shapes",
+        "Underwater cutting",
+        "Minimal noise",
+      ],
+    },
   ];
 
   return (
@@ -100,14 +175,16 @@ const Services = () => {
         <section className="py-20 hero-gradient">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6 fade-in">
-              Professional{' '}
+              Professional{" "}
               <span className="bg-gradient-to-r from-[#8A0707] to-[#FF2E2E] bg-clip-text text-transparent">
                 Core Cutting & Rebaring
-              </span>{' '}
+              </span>{" "}
               Services
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto fade-in">
-              Comprehensive solutions for all your concrete cutting and reinforcement needs with state-of-the-art equipment and expert craftsmanship.
+              Comprehensive solutions for all your concrete cutting and
+              reinforcement needs with state-of-the-art equipment and expert
+              craftsmanship.
             </p>
           </div>
         </section>
@@ -129,14 +206,14 @@ const Services = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {coreCuttingServices.map((service, index) => (
-                <div 
+                <div
                   key={service.title}
                   className="service-card slide-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="aspect-video bg-gradient-to-br from-primary/5 to-secondary/5 rounded-lg mb-4 overflow-hidden">
-                    <img 
-                      src={service.image} 
+                    <img
+                      src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -172,20 +249,21 @@ const Services = () => {
                 Rebaring Service
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Professional reinforcement and advanced cutting solutions for structural integrity
+                Professional reinforcement and advanced cutting solutions for
+                structural integrity
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {rebaringServices.map((service, index) => (
-                <div 
+                <div
                   key={service.title}
                   className="service-card slide-up"
                   style={{ animationDelay: `${index * 0.15}s` }}
                 >
                   <div className="aspect-video bg-gradient-to-br from-secondary/5 to-primary/5 rounded-lg mb-4 overflow-hidden">
-                    <img 
-                      src={service.image} 
+                    <img
+                      src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     />
@@ -217,19 +295,27 @@ const Services = () => {
               Need Professional Core Cutting Services?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Contact us today for a free consultation and detailed quote for your project requirements.
+              Contact us today for a free consultation and detailed quote for
+              your project requirements.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact" className="btn-primary bg-gradient-to-r from-[#8A0707] via-[#C80F0F] to-[#FF2E2E] text-white">
+              <a
+                href="/contact"
+                className="btn-primary bg-gradient-to-r from-[#8A0707] via-[#C80F0F] to-[#FF2E2E] text-white"
+              >
                 Get Free Quote
               </a>
-              <a href="tel:+917289938603" className="btn-secondary bg-gradient-to-r from-[#8A0707] via-[#C80F0F] to-[#FF2E2E] text-white border-0">
+              <a
+                href="tel:+917289938603"
+                className="btn-secondary bg-gradient-to-r from-[#8A0707] via-[#C80F0F] to-[#FF2E2E] text-white border-0"
+              >
                 Call Now: +91 72899 38603
               </a>
             </div>
           </div>
         </section>
       </div>
+      <FloatingCTAs phoneNumber="+917289938603" />
     </Layout>
   );
 };
