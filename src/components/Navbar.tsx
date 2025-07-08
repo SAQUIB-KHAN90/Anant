@@ -28,6 +28,7 @@ const Navbar = () => {
     { name: "About", path: "/about", disabled: false },
     { name: "Projects", path: "/projects", disabled: true },
     { name: "Blog", path: "/blog", disabled: true },
+    {name:"Gallery",path:"/gallery",disabled:false},
     { name: "Contact", path: "/contact", disabled: false },
   ];
 
@@ -97,9 +98,7 @@ const Navbar = () => {
                     height="100px"
                   />
                 </span>
-                <span className="text-m text-white font-medium">
-                  Core Cutting & Rebaring Services
-                </span>
+                
               </div>
             </Link>
 
